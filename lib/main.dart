@@ -15,7 +15,8 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(scaffoldBackgroundColor: Color.fromARGB(255, 0, 93, 192)),
+      theme:
+          ThemeData(scaffoldBackgroundColor: Color.fromARGB(255, 0, 93, 192)),
       home: Scaffold(
         body: SafeArea(
           child: Container(

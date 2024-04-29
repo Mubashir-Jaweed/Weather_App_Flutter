@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
 class HomeCard extends StatelessWidget {
-  const HomeCard({super.key});
+  const HomeCard({
+    super.key,
+    required this.value,
+    required this.name,
+  });
+
+  final num value;
+  final String name;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +39,7 @@ class HomeCard extends StatelessWidget {
                 width: 15,
               ),
               Text(
-                "Humidity",
+                name,
                 style: TextStyle(
                   fontSize: 17,
                   fontWeight: FontWeight.w400,
@@ -41,7 +48,7 @@ class HomeCard extends StatelessWidget {
             ],
           ),
           Text(
-            "1234",
+            value.toString(),
             style: TextStyle(
               fontSize: 15,
               fontWeight: FontWeight.w400,
